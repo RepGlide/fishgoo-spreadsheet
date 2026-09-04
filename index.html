@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FishGoo Spreadsheet &amp; Field-Context Guide | Independent</title>
+  <meta name="description" content="Open a practical FishGoo spreadsheet resource, browse categories, and read labels, values, and row context without turning blank cells into facts.">
+  <link rel="canonical" href="https://repglide.github.io/fishgoo-spreadsheet/">
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://repglide.github.io/fishgoo-spreadsheet/">
+  <meta property="og:title" content="FishGoo Spreadsheet &amp; Field-Context Guide | Independent">
+  <meta property="og:description" content="Open a practical FishGoo spreadsheet resource, browse categories, and read labels, values, and row context without turning blank cells into facts.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FishGoo Spreadsheet &amp; Field-Context Guide | Independent">
+  <meta name="twitter:description" content="Open a practical FishGoo spreadsheet resource, browse categories, and read labels, values, and row context without turning blank cells into facts.">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://repglide.github.io/fishgoo-spreadsheet/#website",
+        "url": "https://repglide.github.io/fishgoo-spreadsheet/",
+        "name": "FishGoo Spreadsheet & Field-Context Guide",
+        "description": "Independent directory and informational guide for FishGoo spreadsheet users, built around a Field Context reading method that separates field labels, visible values, row context, and unknown meaning without turning blank cells into assumed facts."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://repglide.github.io/fishgoo-spreadsheet/#webpage",
+        "url": "https://repglide.github.io/fishgoo-spreadsheet/",
+        "name": "FishGoo Spreadsheet and Field-Context Guide",
+        "isPartOf": { "@id": "https://repglide.github.io/fishgoo-spreadsheet/#website" },
+        "description": "Open a practical FishGoo spreadsheet resource, browse categories, and read labels, values, and row context without turning blank cells into facts."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a FishGoo spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A FishGoo spreadsheet is a shared document that compiles listing references, category groupings, and product links formatted for use with agent shopping services. It is a reference to research, not an official, live, or complete product catalog."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this website the official FishGoo service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This website is an independent informational and navigation resource. It is not affiliated with, endorsed by, or operated by FishGoo or Google."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Field Context reading?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Field Context reading separates four things: the field label (what the column header may express), the visible value (what the cell actually shows), the row context (what the header, neighbors, and source provide), and the unknown meaning (what still cannot be determined)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this site provide a data dictionary or verify data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This resource is not a data dictionary service, a product database, a store, a QC certification, a shopping agent, an order tracker, or a fee calculator. It explains how to read, not what the data means."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I read a blank cell?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A blank, dash, or missing cell shows nothing, so mark it as not shown or unknown. It must not be automatically read as no, zero, none, or not applicable. A blank is an absence of information, not a value."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do I continue after reading a row?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "After you have read the field label, visible value, and row context, and re-checked the destination page, you can continue through an agent shopping service to submit the item. This website is a navigation resource and does not process orders itself."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand" aria-label="FishGoo Spreadsheet Home">
+        <img src="./assets/images/logo.png" alt="FishGoo logo" width="34" height="34">
+        <span class="brand-name">FishGoo Spreadsheet<small>Independent Resource</small></span>
+      </a>
+      <button class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./field-context-guide/">Field Context</a></li>
+          <li><a href="./blank-cell-guide/">Blank Cells</a></li>
+          <li><a href="./cross-row-consistency-guide/">Cross-Row</a></li>
+          <li><a href="./about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-badge">Field Context / Typesetter&rsquo;s Data Dictionary</span>
+          <h1 class="hero-title">FishGoo Spreadsheet and <em>Field-Context</em> Guide</h1>
+          <p class="hero-description">Open a practical FishGoo spreadsheet resource, browse twelve product categories, and read field labels, visible values, row context, and blank cells without turning missing information into assumed facts.</p>
+          <div class="hero-actions">
+            <a href="https://repglide.com/?agent=fishgoo" class="btn btn-primary" target="_blank" rel="noopener">Browse Products</a>
+            <a href="https://docs.google.com/spreadsheets/d/1lSC66IRzVtWp0Arn8F5EmrXXbrlkGSHU/edit?usp=sharing&amp;ouid=102900013243329745539&amp;rtpof=true&amp;sd=true" class="btn btn-secondary" target="_blank" rel="noopener">Open Google Sheet</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="specimen">
+            <span class="index-ruler"></span>
+            <span class="def-bracket"></span>
+            <span class="spec-word spec-field">Field</span>
+            <span class="spec-word spec-value">VALUE</span>
+            <span class="spec-word spec-context">CONTEXT</span>
+            <span class="spec-word spec-unknown">UNKNOWN</span>
+            <span class="folio-label">Specimen 04</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories (immediately after Hero) -->
+    <section class="categories-section" id="categories" aria-labelledby="cat-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Dictionary Dividers</span>
+          <h2 class="section-title" id="cat-heading">Browse the Product Categories</h2>
+          <p class="section-lead">Twelve category divider pages from the FishGoo spreadsheet resource. Each divider opens the matching catalog view for further browsing.</p>
+        </div>
+
+        <div class="cat-grid">
+          <a class="cat-card" href="https://repglide.com/category/bags?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 01</span><span class="cat-spec">01</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M7 8h10l1 11H6L7 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+            <span class="cat-name">Bags</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/womens-clothing?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 02</span><span class="cat-spec">02</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M12 3.5 9.8 6 7 5l2 5h.6V20h4.8V10H15l2-5-2.8 1L12 3.5Z"/></svg></span>
+            <span class="cat-name">Women&rsquo;s Clothing</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/mens-clothing?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 03</span><span class="cat-spec">03</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M12 4 8.5 5.5 6 4v3l2.5 1.5V20h7V8.5L18 7V4l-2.5 1.5L12 4Z"/></svg></span>
+            <span class="cat-name">Men&rsquo;s Clothing</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/sneakers?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 04</span><span class="cat-spec">04</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M3 16v-1.5c0-1 1-2 2-2h1l1.5-3L8 5.5h8l.5 4L18 12.5h1c1 0 2 1 2 2V16c0 1.5-1.5 2.5-3 2.5H6c-1.5 0-3-1-3-2.5Z"/><path d="M6 18.5V20M18 18.5V20"/></svg></span>
+            <span class="cat-name">Sneakers</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/designer-shoes?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 05</span><span class="cat-spec">05</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M4 17c0 1.5 1.5 2.5 3 2.5h10c1.5 0 3-1 3-2.5v-1.5l-2-5V6l-2 1-1-1-1 1-1-1-1 1-1-1-2-1v4.5l-2 5V17Z"/><path d="M4 17v1.5M20 17v1.5"/></svg></span>
+            <span class="cat-name">Designer Shoes</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/designer-womens-shoes?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 06</span><span class="cat-spec">06</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M9 4.5 7.5 9 5 10.5c-1 .5-1.5 1.5-1 2.5s2 1 2.5 0L9 11.5 14 14l-1.5-5.5L16 6.5 15 5l-1.5 1.5L13 5l-1.5 1.5L10 5 9 4.5Z"/></svg></span>
+            <span class="cat-name">Designer Women&rsquo;s Shoes</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/perfume?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 07</span><span class="cat-spec">07</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M9 12V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"/><path d="M7 12h10v8a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-8Z"/><path d="M12 4V3"/></svg></span>
+            <span class="cat-name">Perfume</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/watches?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 08</span><span class="cat-spec">08</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><circle cx="12" cy="12" r="6"/><path d="M12 9v3l2 2"/><path d="M9 6 8 3h8l-1 3"/><path d="M9 18l-1 3h8l-1-3"/></svg></span>
+            <span class="cat-name">Watches</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/jerseys?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 09</span><span class="cat-spec">09</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M12 4 8 5.5 6 4v3l2 1.5V20h8V8.5L18 7V4l-2 1.5L12 4Z"/><path d="M12 10v3"/></svg></span>
+            <span class="cat-name">Jerseys</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/accessories?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 10</span><span class="cat-spec">10</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M3 9h2l1-3h12l1 3h2"/><path d="M3 9v1a3 3 0 0 0 6 0V9"/><path d="M15 9v1a3 3 0 0 0 6 0V9"/><path d="M6 9h12"/></svg></span>
+            <span class="cat-name">Accessories</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/underwear-swimwear?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 11</span><span class="cat-spec">11</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><path d="M7 5c0 2 1.5 3 2.5 3S12 7 12 5c0 1 1.5 2 2.5 2S17 5 17 5"/><path d="M9.5 8 8 13c-1 3 0 6 4 6s5-3 4-6l-1.5-5"/></svg></span>
+            <span class="cat-name">Underwear &amp; Swimwear</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+          <a class="cat-card" href="https://repglide.com/category/other?agent=fishgoo" target="_blank" rel="noopener">
+            <span class="cat-top"><span class="cat-code">FOLIO 12</span><span class="cat-spec">12</span></span>
+            <span class="cat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.5 3"><circle cx="7" cy="7" r="1.6"/><circle cx="17" cy="7" r="1.6"/><circle cx="7" cy="17" r="1.6"/><circle cx="17" cy="17" r="1.6"/></svg></span>
+            <span class="cat-name">Other Finds</span>
+            <span class="cat-arrow">Open category →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Read the Header Before the Value -->
+    <section class="section section-alt" id="read-header" aria-labelledby="rh-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Read the Header Before the Value</span>
+          <h2 class="section-title" id="rh-heading">Four Parts of a Field, Read Separately</h2>
+          <p class="section-lead">A value only means something inside its field. Read the label, the value, the row context, and the unknown — in that order, without letting them blur together.</p>
+        </div>
+
+        <div class="field-method">
+          <div class="fm-step fm-field">
+            <span class="fm-num">Part 01 — Field label</span>
+            <h3>What the header may express</h3>
+            <p>Read the column header first. It names what the cell is supposed to carry — not what you hope it carries.</p>
+          </div>
+          <div class="fm-step fm-value">
+            <span class="fm-num">Part 02 — Visible value</span>
+            <h3>What the cell actually shows</h3>
+            <p>Record exactly what is displayed in the cell. If nothing is displayed, that absence is the visible value.</p>
+          </div>
+          <div class="fm-step fm-context">
+            <span class="fm-num">Part 03 — Row context</span>
+            <h3>What the neighbors provide</h3>
+            <p>Use the header, the adjacent cells, and the source position to understand how this row should be read.</p>
+          </div>
+          <div class="fm-step fm-unknown">
+            <span class="fm-num">Part 04 — Unknown meaning</span>
+            <h3>What still cannot be determined</h3>
+            <p>Mark whatever remains unclear instead of guessing. An unknown stays open until the page resolves it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blank Is Not Zero -->
+    <section class="section" id="blank-not-zero" aria-labelledby="bz-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Blank Is Not Zero</span>
+          <h2 class="section-title" id="bz-heading">A Blank Cell Shows Nothing</h2>
+          <p class="section-lead">A blank, a dash, or a missing value means the cell shows nothing. It must not be read as no, zero, none, or not applicable.</p>
+        </div>
+
+        <div class="blank-panel">
+          <div class="blank-cell">
+            <span class="blank-marker" aria-hidden="true"></span>
+            <span class="blank-word">Not shown</span>
+            <span class="blank-marker" aria-hidden="true"></span>
+          </div>
+          <p>An empty cell is an absence of information, not a value. Keep it marked as not shown or unknown until the source page says otherwise.</p>
+        </div>
+
+        <div class="blank-grid">
+          <div class="blank-col is-blank">
+            <h3>A blank means</h3>
+            <ul>
+              <li>The cell currently shows nothing.</li>
+              <li>The value is missing or not displayed.</li>
+              <li>Something to mark as unknown, not to fill in.</li>
+            </ul>
+          </div>
+          <div class="blank-col is-assumed">
+            <h3>A blank does not mean</h3>
+            <ul>
+              <li>No, zero, or none.</li>
+              <li>Not applicable or not included.</li>
+              <li>A value you are free to invent.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Field Dictionary Card -->
+    <section class="section section-alt" id="dictionary-card" aria-labelledby="dc-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">The Field Dictionary Card</span>
+          <h2 class="section-title" id="dc-heading">One Row, Four Lines of Proof</h2>
+          <p class="section-lead">A typesetting-proof structure, not a table interface. Each block is divided by a field rule, with the unknown marked separately.</p>
+        </div>
+
+        <div class="dictionary-card">
+          <div class="dc-head">
+            <span class="dc-title">Field Dictionary Card — One Row</span>
+            <span class="folio-label">Folio 01</span>
+          </div>
+          <div class="dc-blocks">
+            <div class="dc-block dc-field">
+              <span class="dc-label">Field label</span>
+              <span class="dc-def">What the column header may express for this row.</span>
+            </div>
+            <div class="dc-block dc-value">
+              <span class="dc-label">Visible value</span>
+              <span class="dc-def">What the current cell actually displays, kept exactly as shown.</span>
+            </div>
+            <div class="dc-block dc-context">
+              <span class="dc-label">Row context</span>
+              <span class="dc-def">What the header, adjacent cells, and source position contribute.</span>
+            </div>
+            <div class="dc-block dc-unknown">
+              <span class="dc-label">Unknown meaning</span>
+              <span class="dc-def">What still cannot be determined, marked rather than assumed.</span>
+            </div>
+          </div>
+        </div>
+        <p class="example-flag" style="display:block;text-align:center;">Field-reading example — not actual sheet data, a database, or verification.</p>
+      </div>
+    </section>
+
+    <!-- Same Shape, Different Meaning -->
+    <section class="section" id="same-shape" aria-labelledby="ss-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Same Shape, Different Meaning</span>
+          <h2 class="section-title" id="ss-heading">Re-Confirm Before You Compare Rows</h2>
+          <p class="section-lead">Similar numbers, short labels, and icons can use different units, options, or contexts. Re-confirm the header, unit, format, and source before comparing across rows.</p>
+        </div>
+        <div class="shape-grid">
+          <div class="shape-col is-same">
+            <h3><span class="mark">✓</span>Two rows line up when</h3>
+            <ul>
+              <li>The header is the same for both rows.</li>
+              <li>The unit and format are confirmed equal.</li>
+              <li>The source context matches for both.</li>
+            </ul>
+          </div>
+          <div class="shape-col is-diff">
+            <h3><span class="mark">✕</span>Do not compare when</h3>
+            <ul>
+              <li>Different units hide behind the same shape.</li>
+              <li>Different options share a short label.</li>
+              <li>The source context differs between rows.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="field-rule" style="max-width:760px;margin:18px auto 0;"><strong>Field rule</strong>A number, label, or icon is not portable. It carries the unit, option, and context of its own row, and must be re-confirmed before any cross-row comparison.</div>
+      </div>
+    </section>
+
+    <!-- Guide entries -->
+    <section class="section section-alt" id="guides" aria-labelledby="guides-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Dictionary Guides</span>
+          <h2 class="section-title" id="guides-heading">Three Guides for the Field</h2>
+        </div>
+        <div class="guide-grid">
+          <a class="guide-card" href="./field-context-guide/">
+            <span class="guide-num">GUIDE 01</span>
+            <h3>Field Context Guide</h3>
+            <p>Separate field label, visible value, row context, and unknown meaning before you interpret a cell.</p>
+            <span class="guide-cta">Read the guide →</span>
+          </a>
+          <a class="guide-card" href="./blank-cell-guide/">
+            <span class="guide-num">GUIDE 02</span>
+            <h3>Blank Cell Guide</h3>
+            <p>Why blank, dash, missing, and not-shown content cannot mean no, zero, or not applicable.</p>
+            <span class="guide-cta">Read the guide →</span>
+          </a>
+          <a class="guide-card" href="./cross-row-consistency-guide/">
+            <span class="guide-num">GUIDE 03</span>
+            <h3>Cross-Row Consistency Guide</h3>
+            <p>Confirm header, unit, format, and source context before comparing multiple rows.</p>
+            <span class="guide-cta">Read the guide →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Do Not Fill the Missing Cell -->
+    <section class="section" id="do-not-fill" aria-labelledby="dnf-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Do Not Fill the Missing Cell</span>
+          <h2 class="section-title" id="dnf-heading">Know When to Leave It Blank</h2>
+        </div>
+        <ul class="stop-list">
+          <li><span class="s-num">1</span><p><strong>The header was skipped.</strong> You interpreted a value without reading its label. Stop and read the header first.</p></li>
+          <li><span class="s-num">2</span><p><strong>A blank became a value.</strong> You read a blank as no, zero, or not applicable. Stop and restore it to not shown.</p></li>
+          <li><span class="s-num">3</span><p><strong>Context was ignored.</strong> The value was read without its row, source, or neighbors. Stop and re-read in context.</p></li>
+          <li><span class="s-num">4</span><p><strong>Units were assumed equal.</strong> Similar numbers were compared across rows without confirming units. Stop and re-confirm.</p></li>
+          <li><span class="s-num">5</span><p><strong>An unknown was filled in.</strong> You invented a meaning for an open cell. Stop and mark it unknown instead.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What is a FishGoo spreadsheet?</summary>
+            <div class="faq-body"><p>A FishGoo spreadsheet is a shared document that compiles listing references, category groupings, and product links formatted for use with agent shopping services. It is a reference to research, not an official, live, or complete product catalog.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Is this website the official FishGoo service?</summary>
+            <div class="faq-body"><p>No. This website is an independent informational and navigation resource. It is not affiliated with, endorsed by, or operated by FishGoo or Google.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What is Field Context reading?</summary>
+            <div class="faq-body"><p>Field Context reading separates four things: the field label (what the column header may express), the visible value (what the cell actually shows), the row context (what the header, neighbors, and source provide), and the unknown meaning (what still cannot be determined).</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Does this site provide a data dictionary or verify data?</summary>
+            <div class="faq-body"><p>No. This resource is not a data dictionary service, a product database, a store, a QC certification, a shopping agent, an order tracker, or a fee calculator. It explains how to read, not what the data means.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How do I read a blank cell?</summary>
+            <div class="faq-body"><p>A blank, dash, or missing cell shows nothing, so mark it as not shown or unknown. It must not be automatically read as no, zero, none, or not applicable. A blank is an absence of information, not a value.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Where do I continue after reading a row?</summary>
+            <div class="faq-body"><p>After you have read the field label, visible value, and row context, and re-checked the destination page, you can continue through an agent shopping service to submit the item. This website is a navigation resource and does not process orders itself.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="final-cta">
+          <h2 id="cta-heading">Open the Sheet, Then Read Each Field</h2>
+          <p>Start from the shared FishGoo spreadsheet resource, browse the category dividers, and read the header, value, context, and blank cells without filling in what is missing.</p>
+          <a href="https://repglide.com/?agent=fishgoo" class="btn btn-primary" target="_blank" rel="noopener">Browse Products</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="./index.html" class="brand" aria-label="FishGoo Spreadsheet Home">
+            <img src="./assets/images/logo.png" alt="FishGoo logo" width="30" height="30">
+            <span class="brand-name">FishGoo Spreadsheet<small>Independent Resource</small></span>
+          </a>
+          <p>An independent informational and navigation resource for FishGoo spreadsheet users. Not affiliated with or endorsed by FishGoo or Google. This resource is not a data dictionary service, product database, store, QC certification, shopping agent, order tracker, or fee calculator.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Guides</h4>
+          <ul>
+            <li><a href="./field-context-guide/">Field Context</a></li>
+            <li><a href="./blank-cell-guide/">Blank Cells</a></li>
+            <li><a href="./cross-row-consistency-guide/">Cross-Row</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="./about/">About</a></li>
+            <li><a href="./privacy/">Privacy</a></li>
+            <li><a href="./terms/">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> FishGoo Spreadsheet. Independent resource.</span>
+        <span>Read the header before the value.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
